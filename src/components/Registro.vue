@@ -96,7 +96,7 @@ export default{
                 'Authorization': 'Token ' + localStorage.getItem("token")
                 }
             }
-            const path='http://127.0.0.1:8000/api/alumnos-registro/'
+            const path='http://enriquegonz.ddns.net/api/alumnos-registro/'
             axios.post(path,{
                 nombre:this.nombre,
                 apellidos:this.apellidos,

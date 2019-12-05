@@ -107,7 +107,7 @@ export default{
                 'Authorization': 'Token ' + localStorage.getItem("token")
                 }
             }
-            const path='http://127.0.0.1:8000/api/alumnos/'+this.id
+            const path='http://enriquegonz.ddns.net/api/alumnos/'+this.id
             axios.put(path,{
                 nombre:this.nombre,
                 apellidos:this.apellidos,

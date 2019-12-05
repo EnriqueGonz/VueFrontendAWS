@@ -41,7 +41,7 @@ export default {
         }
     },methods:{
         entrar(){
-           const path='http://127.0.0.1:8000/api/login/'
+           const path='http://enriquegonz.ddns.net/api/login/'
             axios.post(path,{
                 username:this.usuario,
                 password:this.password
@@ -49,6 +49,8 @@ export default {
                 // eslint-disable-next-line no-console
                 localStorage.setItem('token', response.data.token)
                 this.$router.push("/lista")
+                // eslint-disable-next-line no-console
+                console.log(response.data.token)
             })
             /* eslint-disable */
         .catch((error)=>{

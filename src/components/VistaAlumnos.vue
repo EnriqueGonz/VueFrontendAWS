@@ -80,7 +80,7 @@ export default {
           'Authorization': 'Token ' + localStorage.getItem("token")
           }
         }
-           const path='http://127.0.0.1:8000/api/alumnos/'
+           const path='http://enriquegonz.ddns.net/api/alumnos/'
             axios.get(path,config).then((response)=>{
                 this.desserts=response.data 
             })
@@ -102,7 +102,7 @@ export default {
           'Authorization': 'Token ' + localStorage.getItem("token")
           }
         }
-           const path='http://127.0.0.1:8000/api/alumnos/'+id
+           const path='http://enriquegonz.ddns.net/api/alumnos/'+id
             axios.delete(path,config).then((response)=>{
                 console.log(response)
                 alert('El alumno con la id '+id +' ha sido eliminado correctamente')
